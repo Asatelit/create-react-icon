@@ -1,0 +1,56 @@
+{
+  "name": "create-react-icon",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Svg Icons converted to React components.",
+  "main": "./src/index.js",
+  "keywords": [
+    "react",
+    "react-component",
+    "icons"
+  ],
+  "scripts": {
+    "build": "babel-node --config-file ./babel.config.js ./builder.js --output-dir ./build --svg-dir ./icons --renameFilter ./renameFilters/material-design-icons.js"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^3.0.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.0.0",
+    "recompose": "0.28.0 - 0.30.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0",
+    "@babel/core": "7.0.0",
+    "@babel/node": "7.0.0",
+    "@babel/plugin-proposal-class-properties": "7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/plugin-transform-object-assign": "7.0.0",
+    "@babel/plugin-transform-runtime": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.0.0",
+    "@types/react": "^16.4.14",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-istanbul": "^5.0.0",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-preval": "^2.0.0",
+    "babel-plugin-react-remove-properties": "^0.2.5",
+    "babel-plugin-transform-dev-warning": "^0.1.0",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
+    "cross-env": "^5.2.0",
+    "fs-extra": "^7.0.0",
+    "mkdirp": "^0.5.0",
+    "mustache": "^2.0.0",
+    "svgo": "^1.0.5",
+    "temp": "^0.8.3",
+    "yargs": "^12.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
